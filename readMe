@@ -1,0 +1,30 @@
+
+👨‍💻프로젝트를 통해 배운것들
+---
+```
+classList.add : 클래스를 필요에 따라 삽입한다.
+classList.remove : 클래스를 필요에 따라 제거한다.
+classList.contains : 값이 존재하는지 체크한다. (true/false)
+classList.toggle(): 클래스값이 있는지 체크하고 없으면 더하고 있으면 제거한다.
+```
+
+스크롤
+```
+ scrollBy( 가로 스크롤 값, 세로 스크롤 값 );
+ scrollTo( 가로 스크롤 위치 값, 세로 스크롤 위치 값 );
+```
+
+   ```
+  IE, firefox
+document.documentElement.scrollLeft : x 축 방향으로 스크롤한 거리
+document.documentElement.scrollTop : y 축 방향으로 스크롤한 거리
+  크롬, 사파리, 오페라에도 같은 프로퍼티가 있지만 값이 항상 0
+
+Chrome, safari, opera, edge, Quirks Mode
+document.body.scrollLeft : x 축 방향으로 스크롤한 거리
+document.body.scrollTop : y 축 방향으로 스크롤한 거리
+
+Firefox, chrome, safari, opera, edge, IE>=9
+window.pageXOffset : x 축 방향으로 스크롤한 거리
+window.pageYOffset : y 축 방향으로 스크롤한 거리
+```

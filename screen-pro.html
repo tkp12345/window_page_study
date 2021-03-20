@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크린 크기추적기</title>
+    <script>
+        let a=window.screen
+    </script>
+    <style>
+        .section{
+            display: inline-block;
+            background-color: aqua;
+            padding:20px;
+            margin-top: 20px;
+            font-size: 48px;
+        }
+    </style>
+</head>
+<body>
+    <div class="section">
+    <script>
+            const tag =document.querySelector('.section');
+        function updateTag(){
+            tag.innerHTML =`
+              window.screen: ${window.screen.width}, ${window.screen.height}
+              window.screen: ${window.outerWidth}, ${window.outerHeight}
+              window.screen: ${window.innerWidth}, ${window.innerWidth}
+              documentElement.clientWidth: ${document.documentElement.clientWidth}, ${document.documentElement.clientHeight}
+              `;
+        }
+          window.addEventListener('resize',()=>{
+            updateTag()
+             
+          })
+          updateTag();
+    </script>
+ </div>
+</body>
+</html>
